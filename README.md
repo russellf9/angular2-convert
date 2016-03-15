@@ -1,5 +1,10 @@
 # ng-book 2: ng1 example app
 
+## Project from ng-book 2 by  Felipe Coury, Ari Lerner, Nate Murray, & Carlos Taborda
+
+Learning how to convert an Angular 1 app to Angular 2
+
+
 ## Quick start
 
 ```bash
