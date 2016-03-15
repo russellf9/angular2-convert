@@ -1,21 +1,36 @@
 {
   "name": "ng1-pinterest",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "toy pinterest clone in ng1",
   "main": "index.js",
   "private": true,
   "scripts": {
+    "tsc": "./node_modules/.bin/tsc",
+    "tsc:w": "./node_modules/.bin/tsc -w",
     "serve": "./node_modules/.bin/live-server --host=localhost --port=8080 .",
-    "go": "npm run serve"
+    "go": "concurrent \"npm run tsc:w\" \"npm run serve\" "
   },
   "author": "Russell Wenban <russell@factornine.co.uk>",
   "dependencies": {
+    "angular2": "2.0.0-beta.2",
+    "es6-promise": "3.0.2",
+    "es6-shim": "0.33.3",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.0",
+    "systemjs": "0.19.6",
+    "zone.js": "0.5.10"
   },
   "devDependencies": {
-    "live-server": "^0.9.0"
+    "concurrently": "1.0.0",
+    "karma": "0.12.22",
+    "karma-chrome-launcher": "0.1.4",
+    "karma-jasmine": "0.1.5",
+    "live-server": "0.9.0",
+    "typescript": "1.7.3"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/russellf9/angular2-convert.git"
   }
 }
+
