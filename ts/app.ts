@@ -1,6 +1,7 @@
 import { UpgradeAdapter } from 'angular2/upgrade';
 import * as angular from 'angular2/src/upgrade/angular_js';
 import 'interestAppNg1'; // "bare import" for side-effects
+import { Pin, PinsService } from 'interestAppNg1';
 
 
 /*
