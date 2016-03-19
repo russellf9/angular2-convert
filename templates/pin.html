@@ -13,12 +13,9 @@
     </div>
     <div class="overlay">
       <div class="controls">
-        <div class="heart">
-          <a ng-click="toggleFav()">
-            <img src="/images/icons/Heart-Empty.png" ng-if="!pin.faved"></img>
-            <img src="/images/icons/Heart-Red.png"   ng-if="pin.faved"></img>
-          </a>
-        </div>
+        <pin-controls [pin]="pin"
+                      (faved)="toggleFav($event)">
+        </pin-controls>
       </div>
     </div>
   </div>
